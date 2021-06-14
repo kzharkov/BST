@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BST", "BST.csproj", "{0F82A089-8CF8-43A9-9615-D07E0B7A1FCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BSTTests", "..\BSTTests\BSTTests.csproj", "{E3A031D9-6444-4B82-B9B5-4CC96892B278}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F82A089-8CF8-43A9-9615-D07E0B7A1FCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F82A089-8CF8-43A9-9615-D07E0B7A1FCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F82A089-8CF8-43A9-9615-D07E0B7A1FCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F82A089-8CF8-43A9-9615-D07E0B7A1FCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3A031D9-6444-4B82-B9B5-4CC96892B278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3A031D9-6444-4B82-B9B5-4CC96892B278}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3A031D9-6444-4B82-B9B5-4CC96892B278}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3A031D9-6444-4B82-B9B5-4CC96892B278}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {53015072-B200-447A-B732-E0C0FE322E22}
+	EndGlobalSection
+EndGlobal
