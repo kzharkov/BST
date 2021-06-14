@@ -186,19 +186,23 @@ namespace AlgorithmsDataStructures2
 
         public int Count()
         {
-            return CountHelper(Root); // количество узлов в дереве
+            if (Root == null)
+            {
+                return 0;
+            }
+            return CountHelper(Root, 0); // количество узлов в дереве
         }
 
-        private int CountHelper(BSTNode<T> node)
+        private int CountHelper(BSTNode<T> node, int count)
         {
-            int count = 0;
+            count++;
             if (node.LeftChild != null)
             {
-                count += CountHelper(node.LeftChild);
+                count = CountHelper(node.LeftChild, count);
             }
             if (node.RightChild != null)
             {
-                count += CountHelper(node.RightChild);
+                count = CountHelper(node.RightChild, count);
             }
 
             return count;
