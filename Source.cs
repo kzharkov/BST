@@ -150,9 +150,11 @@ namespace AlgorithmsDataStructures2
             }
 
             var node = FinMinMax(bstFind.Node.RightChild, false);
+
             if (bstFind.Node.LeftChild != null)
             {
                 bstFind.Node.LeftChild.Parent = node;
+                node.LeftChild = bstFind.Node.LeftChild;
             }
             if (node.LeftChild == null && node.RightChild == null)
             {
@@ -165,10 +167,16 @@ namespace AlgorithmsDataStructures2
             {
                 if (node.Parent != bstFind.Node)
                 {
-                    node.RightChild.Parent = node.Parent;
+                    if (node.RightChild != null)
+                    {
+                        node.RightChild.Parent = node.Parent;
+                    }
                     node.Parent.LeftChild = node.RightChild;
                 }
             }
+
+            bstFind.Node.RightChild.Parent = node;
+            node.RightChild = bstFind.Node.RightChild;
 
             if (bstFind.Node.Parent.LeftChild == bstFind.Node)
             {
