@@ -178,6 +178,13 @@ namespace AlgorithmsDataStructures2
             bstFind.Node.RightChild.Parent = node;
             node.RightChild = bstFind.Node.RightChild;
 
+            if (bstFind.Node == Root)
+            {
+                node.Parent = null;
+                Root = node;
+                return true;
+            }
+
             if (bstFind.Node.Parent.LeftChild == bstFind.Node)
             {
                 bstFind.Node.Parent.LeftChild = node;
